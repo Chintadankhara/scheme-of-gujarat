@@ -1,0 +1,36 @@
+  {/* <!--Image-slider--> */}
+      <div className="container mt-3">
+
+        <div className="row col-md-12 ms-auto me-auto">
+          <div className="carousel slide carousel-fade" id="scheme" data-bs-ride="carousel">
+            <div className="carousel-inner">
+              <ol className="carousel-indicators">
+                <li className="active" data-bs-target="#scheme" data-bs-slide-to="0"></li>
+                <li data-bs-target="#scheme" data-bs-slide-to="1"></li>
+              </ol>
+              <div className="carousel-item active">
+                <img src={divyang} className="img-fluid rounded" />
+                <div className="carousel-caption">
+                  <h1 className="text-white" style={{ 'backdroFilter': 'blur(1px)' }}>Divyang Samipe Yojana</h1>
+                </div>
+              </div>
+              <div className="carousel-item">
+                <img src={check} className="img-fluid rounded" />
+                <div className="carousel-caption">
+                  <h1 className="text-dark" style={{ 'backdropFilter': 'blur(1px)' }}>Shramik Annapurna Yojana</h1>
+                </div>
+              </div>
+
+              <button type="button" className="carousel-control-prev" data-bs-slide="prev" data-bs-target="#scheme">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              </button>
+              <button type="button" className="carousel-control-next" data-bs-slide="next" data-bs-target="#scheme">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+              </button>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
