@@ -12,7 +12,7 @@ import digilocker from "../assets/digilocker.webp"
 import dataGov from "../assets/dataGov.webp"
 import igod from "../assets/igod.webp"
 import indiaGov from "../assets/indiaGov.webp"
-import mygov from "../assets/mygov.webp"
+import myGov from "../assets/mygov.webp"
 import { useEffect, useRef, useState } from 'react'
 import Typed from 'typed.js'
 import { Signinbutton } from '../components/Signinbutton.jsx'
@@ -257,7 +257,7 @@ export const Home = () => {
               <img src={dataGov} />
               <img src={igod} />
               <img src={indiaGov} />
-              <img src={mygov} />
+              <img src={myGov} />
             </div>
 
             <hr />
