@@ -1,7 +1,5 @@
 import { NavLink } from 'react-router-dom'
 import scheme from '../assets/gujarat.png'
-import divyang from '../assets/divyang.jpg'
-import check from '../assets/check.jpg'
 import right from '../assets/right.png'
 import doctor from '../assets/doctor.jpg'
 import farmer from '../assets/farmer.jpg'
