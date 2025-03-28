@@ -13,25 +13,19 @@ import dataGov from "../assets/dataGov.webp"
 import igod from "../assets/igod.webp"
 import indiaGov from "../assets/indiaGov.webp"
 import myGov from "../assets/myGov.webp"
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef} from 'react'
 import Typed from 'typed.js'
-import { Signinbutton } from '../components/Signinbutton.jsx'
-import { Signoutbutton } from '../components/Signoutbutton.jsx'
-import { Signupbutton } from "../components/Signupbutton.jsx"
+import { Navigation } from '../components/Navigation.jsx'
+import { Allscheme } from './Allscheme.jsx'
 export const Home = () => {
-  const [iscookie, setcookie] = useState(false);
-  useEffect(() => {
-    const check = document.cookie.split("=")[1]
-    if (check == "chintan")
-      setcookie(true);
-  }, [iscookie,setcookie])
+
+  // Access the context of a textRef an provide Typed.js functionality
   const textRef = useRef(null);
   useEffect(() => {
     const typed = new Typed(textRef.current, {
-      strings: ["Education scheme...", "Agriculture scheme...", "Health scheme...", "Disability-citizens scheme...", "Senior-citizen scheme...", "Special-art scheme..."],
+      strings: ["Education-scheme..", "Agriculture-scheme..", "Health-scheme..", "Disability-citizens scheme..", "Senior-citizen scheme..", "Special-art scheme.."],
       typeSpeed: 100,
       backSpeed: 10,
-      backDelay: 1000,
       loop: true,
     })
     return () => {
@@ -41,74 +35,25 @@ export const Home = () => {
 
   return (
     <>
-      {/* Main navigation bar */}
-      <nav className="navbar navbar-expand-md  back navbar-dark shadow-lg mt-3 sticky-top p-0">
+      {/* Navigation baf */}
+      <Navigation />
 
-        <div className="container" style={{ 'boxShadow': 'rgb(145, 133, 133)' }}>
-          <a href="#" className="navbar-brand">
-            <img src={scheme} alt="" width={'50px'} className='rounded ms-2' />
-            <span className="ms-2">Scheme Of Gujarat</span>
-          </a>
-          {/* Navigation toggler */}
-          <a className="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#show">
-            <span><i className="bi bi-three-dots-vertical text-white" style={{ 'cursor': 'pointer' }}></i></span>
-          </a>
-          {/*Navigation toggler */}
-          <div className="offcanvas offcanvas-start bg-dark" tabIndex="-1" id="show" aria-labelledby="offcanvasNavbarLabel">
-            <div className="offcanvas-header">
-              <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-                <span className="text-light">Scheme Of Gujarat</span>
-              </h5>
-              <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                aria-label="Close"></button>
-            </div>
-            <div className="offcanvas-body">
-              <ul className="navbar-nav text-center">
-                <li className="nav-item ms-2">
-                  <a href="" className="nav-link">More-Info</a>
-                </li>
-                <li className="nav-item ms-2">
-                  <a href="" className="nav-link">Join-Us</a>
-                </li>
-              </ul>
-
-              {
-                iscookie ? <>
-                  <Signoutbutton/>
-                </> : <>
-                  <Signinbutton /><Signupbutton />
-                </>
-
-              }
-
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      {/* <!--Scheme-heading--> */}
-
+      {/* <!--Scheme-Typed text--> */}
       <div className="container">
-        <div className="head mt-4">
-          "Scheme Of Gujarat it is an Initiatives that
-          Empowering Gujarat: Government Schemes Portal - Explore,
-          Apply, and Benefit from Various Welfare scheme."
-          <br />
-          <h3 ref={textRef} style={{ 'display': 'inline-block', 'color': 'red' }}></h3>
+        <div className="row">
+          <div className="text-center head mt-4">
+            <h3 ref={textRef} style={{ 'display': 'inline-block', 'color': 'red' }}></h3>
+          </div>
         </div>
 
         <div className="text-center mt-4">
-          <a href="All scheme.html" target="_blank" className="btn btn-dark shadow-lg pt-3 pb-3 ps-3 pe-3" role="button">
+          <NavLink to={'/allscheme'} style={{"backgroundColor":"black"}} className="btn btn-dark shadow-lg pt-2 pb-2 ps-3 pe-3" type='button'>
             <span className="size-scheme">Your Scheme <img src={right} className="right"
               width="40px" /></span>
-          </a>
+          </NavLink>
         </div>
       </div>
 
-      {/* <!---Find-your-scheme--> */}
-      <div className="container">
-
-      </div>
 
 
       {/* <!--Card-of-scheme--> */}

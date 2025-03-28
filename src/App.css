@@ -1,23 +1,15 @@
 /**Main page code**/
 body {
-  background-image: linear-gradient(to right,#ffffff,rgba(230, 224, 224, 0.533));
+ background-color: white !important;
 }
 
 .back {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(41, 29, 29);
 }
 
 .head {
-  border: 0px solid rgb(255, 255, 255);
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgb(0, 0, 0);
-  text-shadow: 0px 0px 1px rgb(145, 133, 133);
-  padding: 20px;
-  text-align: center;
-  font-size: 20px;
-  font-family: monospace, sans-serif;
-  font-weight: bold;
-  color: rgb(0, 0, 0);
+  width: auto;
+  height: 50px;
 }
 
 .size-scheme {
@@ -37,7 +29,7 @@ body {
 }
 
 .special{
-  background-color: rgb(229, 242, 245);
+  background-color: rgb(201, 245, 255);
 }
 
 .text-s {
@@ -83,11 +75,12 @@ body {
 
 .main {
   background-color: rgb(255, 255, 255);
-  width: 335px;
-  height: 550px;
+  width: 350px;
+  height: auto;
   border-radius: 10px;
   border: 1px solid black;
   box-shadow: 0px 0px 10px rgb(160, 160, 160);
+  padding-bottom: 20px;
 }
 
 @media (max-width:380px) {
@@ -111,7 +104,7 @@ body {
   border-radius: 6px;
   outline: none;
   padding: 9px;
-  padding-left: 20px;
+  padding-left: 10px;
   font-family: monospace;
   cursor: pointer;
 }
@@ -127,7 +120,7 @@ body {
   border-radius: 6px;
   outline: none;
   padding: 9px;
-  padding-left: 20px;
+  padding-left: 10px;
   font-family: monospace, sans-serif;
   cursor: pointer;
 }
