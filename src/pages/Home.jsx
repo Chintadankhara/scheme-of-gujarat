@@ -46,7 +46,7 @@ export const Home = () => {
           </div>
         </div>
 
-        <div className="text-center mt-4">
+        <div className="text-center mt-2">
           <NavLink to={'/allscheme'} style={{"backgroundColor":"black"}} className="btn btn-dark shadow-lg pt-2 pb-2 ps-3 pe-3" type='button'>
             <span className="size-scheme">Your Scheme <img src={right} className="right"
               width="40px" /></span>
