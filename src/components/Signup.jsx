@@ -23,7 +23,7 @@ export const Signup = () => {
       errormessage.current.innerHTML = "<span style='color:red'>Password can't match </span>"
     }
     else {
-      const res = await fetch("http://localhost:5500/api/v1/auth/sign-up", {
+      const res = await fetch("https://auth-router.vercel.app/api/v1/auth/sign-up", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

@@ -10,7 +10,7 @@ export const Navigation = () => {
     useEffect(() => {
         async function getres() {
             const check = document.cookie.split("=")[1]
-            const res = await fetch("http://localhost:5500/api/v1/auth/token-check", {
+            const res = await fetch("https://auth-router.vercel.app/v1/auth/token-check", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
