@@ -1,6 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
-import scheme from '../assets/gujarat.png'
-import google from '../assets/google.png'
+import React, { useRef} from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { Home } from '../pages/Home'
 export const Signin = () => {

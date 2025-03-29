@@ -1,6 +1,5 @@
 import React, { useRef } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
-import scheme from '../assets/gujarat.png'
 export const Signup = () => {
 
   const errormessage = useRef()
