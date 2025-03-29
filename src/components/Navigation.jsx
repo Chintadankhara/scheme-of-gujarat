@@ -9,7 +9,7 @@ export const Navigation = () => {
 
                 <div className="container">
                     <a href="#" className="navbar-brand">
-                        <span className="ms-2 text-primary">Chintan Dankhara</span>
+                        <span className="ms-2" style={{"color":"cyan","fontFamily":"monospace"}}>Chintan Dankhara</span>
                     </a>
                     {/* Navigation toggler */}
                     <a className="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#show">
