@@ -34,8 +34,9 @@ body{
 }
 .maintext{
   font-family: monospace;
-  font-size: 25px;
+  font-size: 20px;
   color: rgb(0, 140, 255);
+  line-break: auto;
 }
 .f{
   color: rgb(255, 0, 0);
