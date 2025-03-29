@@ -14,7 +14,7 @@ export const Signin = () => {
       getmessage.current.innerHTML = '<span style="color: red">Please fill required places !</span>';
       return
     }
-    const res = await fetch("https://auth-router.vercel.app/v1/auth/sign-in", {
+    const res = await fetch("https://auth-router.vercel.app/api/v1/auth/sign-in", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
